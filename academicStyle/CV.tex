@@ -45,12 +45,13 @@
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1in}
+\addtolength{\footskip}{-.8in}
 
-\urlstyle{same}
+\urlstyle{same (Proficiency)}
 
 \raggedbottom
 \raggedright
@@ -58,7 +59,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-8pt}\scshape\raggedright\large
+  \vspace{-12pt}\scshape\raggedright\large
 }{}{0em}{}[{\titlerule[1pt]}\vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -69,13 +70,13 @@
 \newcommand{\prof}[2]{Professor \textbf{\href{#1}{#2}}}
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-1.5pt}}
   }
 }
 
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-7pt}\item
+  \vspace{-5pt}\item
     \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
     %\begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
@@ -129,6 +130,10 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newcommand{\obj}{\it Objective: Apply for pre-doctoral research assistants at top universities in the U.S.
+   by \textbf{specifying} the Ph.D.-level core knowledge in economics and management, solid quantitative and coding skills,
+   and various research experiences to substantiate my research potential.
+   } % course-used
 
 \begin{document}
 
@@ -141,11 +146,13 @@
     $|$
     \hspace{.5pt} \href{mailto:ujkuo@ntu.im}{ujkuo@ntu.im}
     $|$
-   \hspace{.5pt} \textbf{\href{https://ujkuo.github.io}{Personal Page}}
-\end{center}
+   \hspace{.5pt} \textbf{\href{https://ujkuo.github.io}{https://ujkuo.github.io}} \\ \vspace{2pt}
+   %\obj
+   \end{center}
 
 %----------- EDUCATION -----------
 
+\vspace{-1em} %% course-used
 \section{Education}
   \vspace{1pt}
   \resumeSubHeadingListStart
@@ -154,32 +161,31 @@
       {National Taiwan University
       % \normalfont{(Admission rate: 0.09\%)}
       }{Taipei, Taiwan}
-      {B.B.A. in Information Management;   \textbf{GPA: 3.98/4.30}}{September 2018 \textbf{-} June 2023}
+      {B.B.A. in Information Management;   \textbf{GPA: 3.98/4.30}}{Sep. 2018 \textbf{-} June 2023}
       \resumeItemListStart
-        \resumeItem{\textbf{Ph.D. Economics Courses:}
-                Microeconomics, Econometrics (Python, R),
+        \resumeItem{\textbf{Ph.D.-level Economics Courses:}
+                Microeconomics, Econometrics (Python, Stata),
+                Bayesian and Network Econometrics,
                 Computational Methods for Econometrics (Python, R, Stata),
-                Economic Analysis of Social Networks (Python, R),
-                Topics in Econometrics.}
-        \resumeItem{\textbf{Ph.D. Business Courses:}
+                Economic Analysis of Social Networks (Python, R).
+                }
+        \resumeItem{\textbf{Ph.D.-level Business Courses:}
                 Game-Theoretic Approach Marketing,
                 Information Economics, Platform Strategy.}
         \resumeItem{\textbf{Computer Science Courses:}
-            Text Mining (Ph.D. level; Python),
-            Machine Learning (Ph.D. level; Python),
+            Text Mining (Ph.D.-level; Python),
+            Machine Learning (Ph.D.-level; Python),
                 Data Structure and Advanced Programming (C++, Python),
-                The Design and Analysis of Algorithms (Python),
-                Database Management (SQL),
-                System Analysis and Design,
-                Computer Networks.}
+                The Design and Analysis of Algorithms (C++, Python),
+                Database (SQL).}
         \resumeItem{\textbf{Mathematics Courses:}
                 Calculus,
                 Statistics (Python),
-                Advanced Statistics (Ph.D. level),
+                Advanced Statistics (Ph.D.-level),
                 ODE/PDE,
                 Linear Algebra,
                 Operations Research (Python),
-                Convex Optimization (Ph.D. level; Python).}
+                Convex Optimization (Ph.D.-level; Python).}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -196,23 +202,24 @@
   and \prof{https://sites.google.com/view/cyruschu}{C.Y. Cyrus Chu}}
   {June 2022 \textbf{-} Present}
         \resumeItemListStart
-          \resumeItem {Organized over 500 suspicious celebrities 
-            related to the MeToo movement
-            and assorted suspects' characteristics.}
-        \resumeItem{Collected, extracted and cleaned    
-            search records from Google Trends
-            to build complete two-year panel data.}
+          %\resumeItem {Organized over 500 suspicious celebrities 
+          %  related to the MeToo movement
+          %  and assorted suspects' characteristics.}
+%        \resumeItem{Collected, extracted and cleaned    
+%            search records from Google Trends
+%            to build complete two-year panel data.}
         \resumeItem {Used a statistical estimation model to calibrate
-        the normalized raw data from Google Trends
-            to enable further analysis.}
-        \resumeItem {Developed and implemented programs to 
-          analyzed the effect of big events and 
+        the normalized raw search records for over 500 suspicious celebrities cleaned and extracted 
+        from Google Trends to build complete two-year panel data
+            to initiate further analysis.}
+        \resumeItem {Developed and implemented regressions to 
+          analyze the effect of big events and 
             spillover in the MeToo movement.}
-        \resumeItem {Conducted and visualized large-scale networks from
+        \resumeItem {Established and visualized large-scale network from
         14GB Taiwanese companies' dataset
             with millions of entries.}
-        \resumeItem {Conducted several literature reviews of corporate finance 
-                applying social network analysis to improve further research.}
+        %\resumeItem {Conducted several literature reviews of corporate finance 
+        %        applying social network analysis to improve further research.}
         \resumeItemListEnd
     
     \resumeSubheading
@@ -221,7 +228,7 @@
       \prof{https://management.ntu.edu.tw/en/IM/faculty/teacher/sn/15}{Chih-Ping Wei}}
       {June 2022 \textbf{-} Present}
         \resumeItemListStart
-        \resumeItem {Conducted literature reviews in economics, business, marketing,
+        \resumeItem {Conducted literature reviews in economics, management, marketing,
             and finance applying sentiment analysis.}
             \resumeItem {Worked on modeling the confidence level of information from 
             online reviews toward varying sentiment and arousal.}
@@ -242,8 +249,8 @@
     combining economics, computer science, education and learning science and
     aiming at
     uncovering the relationship between
-    the offline peer effects and online learning behavior.}
-        \resumeItem {Surveyed 40 pieces of literatures from 
+    the offline peer effects and online learning behavior.+}
+        \resumeItem {Surveyed 40+ pieces of literatures from 
         different fields to establish
             the research objectives, impacts, and methodologies.}
         \resumeItem {Sought the collaboration positively with NTU COOL, 
@@ -252,7 +259,7 @@
             to obtain large-scale online student learning behavior data.}
     \resumeItemListEnd
 
-  \vspace{-7pt}\item
+  \vspace{-5pt}\item
     \textbf{Political Sentiment Analysis: 
   A Survey of U.S. Media's Attitude toward China Before and After
   the Presidential Election}\\
@@ -261,16 +268,16 @@
         \textit{\small Fall 2021}\\
       \end{tabular*}\vspace{-7pt}
     \resumeItemListStart
-      \resumeItem {Proposed the main research topic for discussing the media's attitude
-      before and after the election after surveying five pieces of 
+      \resumeItem {Investigated the media's attitude
+      before and after the precidential election in the U.S. after surveying five pieces of 
           literature regarding sentimental analysis of economics
           and found different accessible data resources.}
       \resumeItem {Studied and compared
       the performance of sentence embeddings from different 
           natural language analysis and sentiment analysis packages and methods
-          to determine the package to use and checked the scrapped data quality.}
-      \resumeItem {Explored and compared the text's cosine similarity with TF-IDF
-          and word embeddings from pre-collected 6000 tweets.}
+          to determine the methodology to use and verified the scrapped data quality.}
+      \resumeItem {Experimented the text's cosine similarity with TF-IDF
+          and word embeddings from pre-collected 6000+ tweets.}
     \resumeItemListEnd
 
     \resumeSubheading
@@ -301,7 +308,7 @@
           NumPy, pandas, Matplotlib, TensorFlow, PyTorch, NLTK, scikit-learn, SciPy, statsmodels,
         BERT, pytrends, Requests, beautifulsuop4, CVXPY, RegEx, 
         Gurobi, NetworkX.} \\
-      \textbf{Languages: }{Chinese(Mandarin), Taiwanese, English.}
+      \textbf{Languages: }{Mandarin (Native), Taiwanese (Native), English (Proficiency).}
         
         % \textbf{Frameworks}{: X, X, X} \\
         % \textbf{Developer Tools}{: X, X, X} \\
