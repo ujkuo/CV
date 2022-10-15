@@ -1,110 +1,198 @@
-%!TEX TS-program = xelatex
-%!TEX encoding = UTF-8 Unicode
-% Awesome CV LaTeX Template for CV/Resume
-%
-% This template has been downloaded from:
-% https://github.com/posquit0/Awesome-CV
-%
-% Author:
-% Claud D. Park <posquit0.bj@gmail.com>
-% http://www.posquit0.com
-%
-% Template license:
-% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-%
+\documentclass{academicThemeCV}
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newcommand{\obj}{\it Objective: Apply for pre-doctoral research assistants at top universities in the U.S.
+   by \textbf{specifying} the Ph.D.-level core knowledge in economics and management, solid quantitative and coding skills,
+   and various research experiences to substantiate my research potential.
+   } % course-used
 
-%-------------------------------------------------------------------------------
-% CONFIGURATIONS
-%-------------------------------------------------------------------------------
-% A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[12pt, a4paper]{awesome-cv}
-\usepackage{xeCJK}
-\setCJKmainfont{思源宋體}
-% Configure page margins with geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
-
-% Specify the location of the included fonts
-\fontdir[fonts/]
-
-% Color for highlights
-% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
-%                 awesome-nephritis, awesome-concrete, awesome-darknight
-\colorlet{awesome}{awesome-red}
-% Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
-
-% Colors for text
-% Uncomment if you would like to specify your own color
-% \definecolor{darktext}{HTML}{414141}
-% \definecolor{text}{HTML}{333333}
-% \definecolor{graytext}{HTML}{5D5D5D}
-% \definecolor{lighttext}{HTML}{999999}
-
-% Set false if you don't want to highlight section with awesome color
-\setbool{acvSectionColorHighlight}{true}
-
-% If you would like to change the social information separator from a pipe (|) to something else
-\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
-
-
-%-------------------------------------------------------------------------------
-%	PERSONAL INFORMATION
-%	Comment any of the lines below if they are not required
-%-------------------------------------------------------------------------------
-% Available options: circle|rectangle,edge/noedge,left/right
-% \photo{./examples/profile.png}
-\name{郭宇杰}{}
-%\position{Software Architect{\enskip\cdotp\enskip}Security Expert}
-%\address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
-
-\mobile{\normalsize 0917-061-223}
-\email{\normalsize ujkuo@ntu.im}
-\homepage{\normalsize ujkuo.github.io}
-%\github{posquit0}
-%\linkedin{posquit0}
-% \gitlab{gitlab-id}
-% \stackoverflow{SO-id}{SO-name}
- \twitter{\normalsize Yu-Chieh Kuo}
-% \skype{skype-id}
-% \reddit{reddit-id}
-% \medium{madium-id}
-% \googlescholar{googlescholar-id}{name-to-display}
-%% \firstname and \lastname will be used
-% \googlescholar{googlescholar-id}{}
-% \extrainfo{extra informations}
-
-%\quote{``Be the change that you want to see in the world."}
-
-
-%-------------------------------------------------------------------------------
 \begin{document}
 
-% Print the header with above personal informations
-% Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader
+%---------- HEADING ----------
 
-% Print the footer with 3 arguments(<left>, <center>, <right>)
-% Leave any of these blank if they are not needed
-\makecvfooter
-  {\today}
-  {Claud D. Park~~~·~~~Curriculum Vitae}
-  {\thepage}
+\begin{center}
+  \textbf{\Huge \scshape Yu-Chieh (Jesse) Kuo} \\ \vspace{3pt}
+    %\small
+  \normalsize
+   %\hspace{.5pt} 
+   \href{tel:886917061223}{+886-917-061-223}
+    $\,|\,$ 
+   \href{mailto:ujkuo@ntu.im}{ujkuo@ntu.im}
+    $\,|\,$
+   \textbf{\href{https://ujkuo.github.io}{https://ujkuo.github.io}} \\ \vspace{2pt}
+   %{\small \obj}
+   \end{center}
+
+%----------- EDUCATION -----------
+
+\vspace{-1em} %% course-used
+\section{Education}
+  \vspace{1pt}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {National Taiwan University
+      % \normalfont{(Admission rate: 0.09\%)}
+      }{Taipei, Taiwan}
+      {B.B.A. in Information Management;   \textbf{GPA: 3.98/4.30}}{Sep. 2018 \textbf{-} June 2023}
+      \resumeItemListStart
+        \resumeItem{\textbf{Ph.D.-level Economics Courses:}
+                Microeconomics, Econometrics (Python, Stata),
+                Bayesian and Network Econometrics,
+                Computational Methods for Econometrics (Python, R, Stata),
+                Economic Analysis of Social Networks (Python, R).
+                }
+        \resumeItem{\textbf{Ph.D.-level Business Courses:}
+                Game-Theoretic Approach Marketing,
+                Information Economics, Platform Strategy.}
+        \resumeItem{\textbf{Computer Science Courses:}
+            Text Mining (Ph.D.-level; Python),
+            Machine Learning (Ph.D.-level; Python),
+                Data Structure and Advanced Programming (C++, Python),
+                The Design and Analysis of Algorithms (C++, Python),
+                Database (SQL).}
+        \resumeItem{\textbf{Mathematics Courses:}
+                Calculus,
+                Statistics (Python),
+                Advanced Statistics (Ph.D.-level),
+                ODE/PDE,
+                Linear Algebra,
+                Operations Research (Python),
+                Convex Optimization (Ph.D.-level; Python).}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%----------- RESEARCH EXPERIENCE -----------
+
+\section{Research Experience}
+  %\vspace{1pt}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Behavior and Data Science Research Center, National Taiwan University}{}
+      {Research Assistant to
+      \prof{https://sites.google.com/site/chihshenghsieh/}{Chih-Sheng Hsieh}
+  and \prof{https://sites.google.com/view/cyruschu}{C.Y. Cyrus Chu}}
+  {June 2022 \textbf{-} Present}
+        \resumeItemListStart
+          %\resumeItem {Organized over 500 suspicious celebrities 
+          %  related to the MeToo movement
+          %  and assorted suspects' characteristics.}
+%        \resumeItem{Collected, extracted and cleaned    
+%            search records from Google Trends
+%            to build complete two-year panel data.}
+        \resumeItem {Used a statistical estimation model to calibrate
+        the normalized raw search records for over 500 suspicious celebrities cleaned and extracted 
+        from Google Trends to build complete two-year panel data
+            to initiate further analysis.}
+        \resumeItem {Developed and implemented regressions to 
+          analyze the effect of big events and 
+            spillover in the MeToo movement.}
+        \resumeItem {Established and visualized large-scale networks from
+        14GB Taiwanese companies' dataset
+            with millions of entries.}
+        %\resumeItem {Conducted several literature reviews of corporate finance 
+        %        applying social network analysis to improve further research.}
+        \resumeItemListEnd
+    
+    \resumeSubheading
+      {Department of Information Management, National Taiwan University}{}
+      {Research Assistant to
+      \prof{https://management.ntu.edu.tw/en/IM/faculty/teacher/sn/15}{Chih-Ping Wei}}
+      {June 2022 \textbf{-} Present}
+        \resumeItemListStart
+        \resumeItem {Conducted literature reviews in economics, management, marketing,
+            and finance applying sentiment analysis.}
+            \resumeItem {Worked on modeling the confidence level of information from 
+            online reviews toward varying sentiment and arousal.}
+        \resumeItemListEnd 
+  \resumeSubHeadingListEnd
+
+%----------- WORK EXPERIENCE -----------
+
+\section{Independent Research}
+  \vspace{1pt}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+    {Online Learning Behavior, Peer Effects, and Education}{}
+    {Term Project for Economics Analysis of Social Networks}{Spring 2022}
+    \resumeItemListStart
+    \resumeItem{Proposed an interdiscinpling research project
+    combining economics, computer science, education and learning science and
+    aiming at
+    uncovering the relationship between
+    the offline peer effects and online learning behavior.}
+        \resumeItem {Surveyed 40+ pieces of literatures from 
+        different fields to establish
+            the research objectives, impacts, and methodologies.}
+        \resumeItem {Sought the collaboration positively with NTU COOL, 
+            an online platform providing professors and students 
+            at National Taiwan University to hold courses and learn online,
+            to obtain large-scale online student learning behavior data.}
+    \resumeItemListEnd
+
+  \vspace{-5pt}\item
+    \textbf{Political Sentiment Analysis: 
+  A Survey of U.S. Media's Attitude toward China Before and After
+  the Presidential Election}\\
+      \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textit{\small Term Project for Text Mining} &
+        \textit{\small Fall 2021}\\
+      \end{tabular*}\vspace{-7pt}
+    \resumeItemListStart
+      \resumeItem {Investigated the media's attitude
+      before and after the precidential election in the U.S. using sentiment analysis
+      after surveying five pieces of literature
+          and found accessible data sources and APIs.}
+     \resumeItem {Polished pre-collected 6000+ Twitter data and examined
+     the text's cosine similarity with TF-IDF
+          and word embedding.}
+      \resumeItem {Experimented with the performance of different 
+          natural language analysis and sentiment analysis packages and methods,
+       then verified the sentiment change of medias and found the 
+      semantic differences between pre- / post-election articles.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {Online-Offline Retailing Cooperation with BOPS Scheme under Price Competition}{}
+    {Term Project for Information Economics}{Spring 2021}
+    \resumeItemListStart
+
+      \resumeItem {Surveyed five pieces of literature related to the topics of competition between retailers
+            and online-offline relationships, especially the adoption of the BOPS 
+            (Buy Online and Pick up in-Store) strategy.}
+      \resumeItem {Formulated a game-theoretic model to analyze the cooperation relationship
+                between online and offline retailers.}
+      \resumeItem {Discussed the firm's efficiency and incentive compatibility to
+              derive the conditions for successful cooperation.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+%----------- SKILLS -----------
+
+\section{Skills}
+  \vspace{1pt}
+  \resumeSubHeadingListStart
+    \vspace{-5pt}
+    \small{\item{
+        \textbf{Programming: }{Python, Stata, R, Julia, shell scripts,
+        SQL, C++, Git/Github, Markdown, \LaTeX.} \\[3pt]
+        \textbf{Python Package: }{
+          NumPy, pandas, Matplotlib, TensorFlow, PyTorch, NLTK, scikit-learn, SciPy, statsmodels,
+        BERT, pytrends, Requests, beautifulsuop4, CVXPY, RegEx, 
+        Gurobi, NetworkX.} \\[3pt]
+      \textbf{Languages: }{Mandarin (Native), Taiwanese (Native), English (Fluency).}
+        
+        % \textbf{Frameworks}{: X, X, X} \\
+        % \textbf{Developer Tools}{: X, X, X} \\
+        % \textbf{Libraries}{: X, X, X} \\
+        % \textbf{Applications}{: X, X, X}
+    }}
+  \resumeSubHeadingListEnd
 
 
-%-------------------------------------------------------------------------------
-%	CV/RESUME CONTENT
-%	Each section is imported separately, open each file in turn to modify content
-%-------------------------------------------------------------------------------
-\input{cv/education.tex}
-\input{cv/skills.tex}
-\input{cv/experience.tex}
-\input{cv/extracurricular.tex}
-\input{cv/honors.tex}
-\input{cv/presentation.tex}
-\input{cv/writing.tex}
-\input{cv/committees.tex}
 
-
-%-------------------------------------------------------------------------------
+%-------------------------------------------
 \end{document}
