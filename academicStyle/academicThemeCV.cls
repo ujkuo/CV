@@ -8,7 +8,7 @@
 
 %\NeedsTexFormat{LaTeX2e}
 \ProvidesPackage{academicThemeCV}
-\LoadClass[letterpaper,11pt]{article}
+\LoadClass[a4paper,11pt]{article}
 
 \RequirePackage{latexsym}
 \RequirePackage[empty]{fullpage}
@@ -27,6 +27,7 @@
 %\RequirePackage{newpxtext,newpxmath}
 \RequirePackage{pxfonts}
 \RequirePackage{titlesec}
+\RequirePackage{setspace}
 
 %---------- FONT OPTIONS ----------
 % sans-serif
@@ -47,14 +48,25 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{0in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.6in}
-\addtolength{\textheight}{1in}
-\addtolength{\footskip}{-.8in}
+%\addtolength{\oddsidemargin}{-0.7in}
+%\addtolength{\evensidemargin}{0in}
+%\addtolength{\textwidth}{1.2in}
+%\addtolength{\topmargin}{-.6in}
+%\addtolength{\textheight}{2in}
+%\addtolength{\footskip}{-.8in}
+\RequirePackage[textheight=23.7cm,
+            hmargin=0.35in, % 210mm-2*26mm=158mm
+            top=15mm, % same as left and right margins (?)
+            %headheight=0.5cm,
+            %headsep=0.5cm,
+            bottom=5mm,
+            %includeheadfoot, % optional
+            %showframe % optional
+           ]{geometry}
+
 
 \urlstyle{same (Proficiency)}
+\RequirePackage{setspace}
 
 \raggedbottom
 \raggedright
@@ -62,8 +74,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-12pt}\scshape\raggedright\large
-}{}{0em}{}[{\titlerule[1pt]}\vspace{-5pt}]
+  \vspace{-15pt}\scshape\raggedright\Large
+}{}{0em}{}[{\titlerule[1pt]}\vspace{-3pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 %\pdfgentounicode=1
@@ -71,15 +83,17 @@
 %-------------------------
 % Custom commands
 \newcommand{\prof}[2]{Professor \textbf{\href{#1}{#2}}}
+
 \newcommand{\resumeItem}[1]{
+\setlength{\baselineskip}{12pt}
   \item\small{
-    {#1 \vspace{-1.5pt}}
+    {#1 \vspace{-1.2pt}}
   }
 }
 
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-5pt}\item
+  \vspace{-7pt}\item
     \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
     %\begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
