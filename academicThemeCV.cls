@@ -64,13 +64,13 @@
 \newcommand{\resumeItem}[1]{
 \setlength{\baselineskip}{12pt}
   \item\small{
-    {#1 \vspace{-1.2pt}}
+    {#1 \vspace{-1pt}}
   }
 }
 
 % Title entry formatting
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-7pt}\item
+  \vspace{-4pt}\item
     \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
     %\begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
