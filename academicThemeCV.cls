@@ -31,11 +31,11 @@
 %----------------------------------%
 % Page style settings
 %----------------------------------%
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+%\pagestyle{fancy}
+%\fancyhf{} % clear all header and footer fields
+%\fancyfoot{}
+%\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\footrulewidth}{0pt}
 \urlstyle{same (Proficiency)}
 
 \raggedbottom
@@ -47,7 +47,7 @@
 %----------------------------------%
 \RequirePackage[textheight=23.7cm,
             hmargin=0.35in,
-            top=15mm,
+            top=10mm,
             bottom=5mm,
            ]{geometry}
 
