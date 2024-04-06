@@ -56,7 +56,7 @@
 %----------------------------------%
 
 % Section formatting
-\titleformat{\section*}{
+\titleformat{\section}{
   \vspace{-15pt}\scshape\raggedright\Large
 }{}{0em}{}[{\titlerule[1pt]}\vspace{-3pt}]
 
