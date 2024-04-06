@@ -1,154 +1,164 @@
-\documentclass{academicThemeCV}
+\documentclass{smoothThemeCV}
 %-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newcommand{\obj}{\it Objective: Apply for pre-doctoral research assistants at top universities in the U.S.
-   by \textbf{specifying} the Ph.D.-level core knowledge in economics and management, solid quantitative and coding skills,
-   and various research experiences to substantiate my research potential.
-   } % course-used
+% Header
+\newlength{\hvspace}
+\setlength{\hvspace}{-7pt}
+
 
 \begin{document}
 
-%---------- HEADING ----------
-%\vspace{-2.3cm}
 \begin{center}
-  \textbf{\Huge \scshape Jesse Yu-Chieh Kuo} \\ \vspace{3pt}
-    %\small
-  \normalsize
-   %\hspace{.5pt} 
-   %\href{tel:886917061223}{+886-917061223}
-    %$\,|\,$ 
-   \href{mailto:ujkuo@ntu.im}{ujkuo@ntu.im}
-    $\,|\,$
-   \textbf{\href{https://ujkuo.github.io}{https://ujkuo.github.io}} \\ \vspace{2pt}
-   %{\small \obj}
-   \end{center}
+    \noindent\textbf{\LARGE Jesse Yu-Chieh Kuo} \\
+\end{center}
+\vspace{\hvspace}
+\hline
+\vspace{\hvspace}
+\begin{center}
+    \noindent Booth School of Business \textbullet\ 5807 S. Woodlawn Ave \textbullet\ Chicago, IL 60637 \\
+    \noindent\faEnvelopeO\enskip \href{mailto:ujkuo@ntu.im}{ujkuo@ntu.im}\enskip
+    \faTwitter\enskip\href{https://twitter.com/ycJesseKuo}{@ycJesseKuo}\enskip
+    \faGlobe\enskip\href{https://ujkuo.github.io}{ujkuo.github.io}\enskip
+    |\enskip \textit{Updated: \today} \\
+\end{center}
+\vspace{\hvspace}
+\hline
+\vspace{-10pt}
 
-%----------- EDUCATION -----------
+% Current Position
+\section*{Current Position}
+\resumeSubHeadingListStart
 
-\vspace{-1em} %% course-used
-\section{Education}
-  \vspace{1pt}
-  \resumeSubHeadingListStart
-    
-    \resumeSubheading
-      {National Taiwan University
-      % \normalfont{(Admission rate: 0.09\%)}
-      }{Taipei, Taiwan}
-      {B.B.A.\@ in Information Management;   \textbf{GPA: 3.93} Magna cum laude}
-      {Sep.\@ 2018 \textbf{-} Jun.\@ 2023} \\ 
-%      \vspace{5pt}
-%      \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
-%        \textit{\small M.A.\@ in Economics} &
-%        \textit{\small Sep.\@ 2023 \textbf{-} Exp.\@ Jun.\@ 2024}\\
-%      \end{tabular*}\vspace{-7pt}
-      \resumeItemListStart
-        \resumeItem{\textbf{Ph.D.-level Economics Courses:}
-                Microeconomics, Econometrics ({\tt Python, Stata}),
-                Bayesian and Network Econometrics,
-                Computational Methods for Econometrics ({\tt Python, R, Stata}),
-                Economic Analysis of Social Networks ({\tt Python, R}).
-                }
-        \resumeItem{\textbf{Ph.D.-level Business Courses:}
-                Game-Theoretic Approach Marketing,
-                Information Economics, Platform Strategy.}
-        \resumeItem{\textbf{Computer Science Courses:}
-            Text Mining (Ph.D.-level; {\tt Python}),
-            Machine Learning (Ph.D.-level; {\tt Python}),
-                Data Structure and Advanced Programming ({\tt C++, Python}),
-                The Design and Analysis of Algorithms ({\tt C++, Python}),
-                Database ({\tt SQL}).}
-        \resumeItem{\textbf{Mathematics Courses:}
-                Analysis,
-                % Statistics (Python),
-                Advanced Statistics (Ph.D.-level),
-                ODE/PDE,
-                Operations Research ({\tt Python}),
-                Convex Optimization (Ph.D.-level; {\tt Python}),
-                Machine Learning Theory (Ph.D.-level).}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
+\resumeSubheading
+{The University of Chicago Booth School of Business}{Chicago, Illinois}
+{Research Professional to \prof{https://sites.google.com/chicagobooth.edu/rimmyetomy/}{Rimmy E.\@ Tomy}}
+{Jul.\@ 2024 \textbf{-} Present} 
 
-%----------- RESEARCH EXPERIENCE -----------
+\resumeSubHeadingListEnd
 
-\section{Research Experience}
-  %\vspace{1pt}
-  \resumeSubHeadingListStart
-  
-    \resumeSubheading
-      {Behavior and Data Science Research Center, National Taiwan University}{}
-      {Research Assistant to
-      \prof{https://sites.google.com/site/chihshenghsieh/}{Chih-Sheng Hsieh}}
-%  and \textbf{\href{https://sites.google.com/view/cyruschu}{C.Y. Cyrus Chu}}}
-  {Jun.\@ 2022 \textbf{-} Present}
-        \resumeItemListStart
-          %\resumeItem {Organized over 500 suspicious celebrities 
-          %  related to the MeToo movement
-          %  and assorted suspects' characteristics.}
-%        \resumeItem{Collected, extracted and cleaned    
-%            search records from Google Trends
-%            to build complete two-year panel data.}
-%        \resumeItem {Used a statistical estimation model to calibrate
-%        the normalized raw search records for over 500 suspicious celebrities cleaned and extracted 
-%        from Google Trends to build complete two-year panel data
-%            to initiate further analysis.}
-%        \resumeItem {Developed and implemented regressions to 
-%          analyze the effect of big events and 
-%            spillover in the MeToo movement.}
-        \resumeItem {Implemented regressions to analyze the effect of big events 
-        and spillover in the MeToo movement after adopting West (2021) 
-        to calibrate the normalized Google Trends time-series data and build a complete two-year
-        panel dataset.}
-        \resumeItem {Employed the network analysis approach to examine suburbanization 
-        and rural labor performance in China by using SQL to utilize a 200GB telecom
-        dataset with tens of billion entries for the communication networks of mobile phones.}
-        \resumeItem {Estimated the impact of users' friendship network sizes,
-        behaviors, and patterns on users' selection of tariff plans, call durations,
-        and cellphone models and extended to the marketing research.}
-%        \resumeItem {Established and visualized large-scale networks from
-%        14GB Taiwanese companies'
-%            and 200GB telecom's datasets.}
-        %\resumeItem {Conducted several literature reviews of corporate finance 
-        %        applying social network analysis to improve further research.}
-        \resumeItemListEnd
-        
-        \resumeSubheading
-        {Department of Economics, National Taiwan University}{}
-        {Research Assistant to 
-        \prof{https://yu-chang-chen.github.io}{Yu-Chang Chen},
-        \textbf{\href{https://sites.google.com/view/tsaihsintien/}{Hsin-Tien (Tiffany) Tsai}},
-        and \textbf{\href{https://economicsatntu.wixsite.com/ming-jen-lin}{Ming-Jen Lin}},
-        in \textbf{\href{https://ccl-lab.github.io}{CCL Lab}}}
-        {Aug.\@ 2023 \textbf{-} Present}
-        \resumeItemListStart
-%        \resumeItem {Conducted literature reviews in science funding and research
-%        evaluations, recommendation systems, e-commerce, and platform advertising 
-%        auctions to initiate and extend current projects regarding e-commerce and science funding.}
-        \resumeItem {Explored user behaviors and patterns and their 
-        purchasing results by using data from a large e-commerce platform.}
-        \resumeItem {Worked on extending Jeziorski and Segal (2015) to estimate consumer impatience
-        in various markets using our dataset.}
-        \resumeItem {Proposed research plans to evaluate and improve the usage and efficiency of research
-        funds by the government.}
-        \resumeItemListEnd
+% Education 
+\section*{Education}
+\resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Department of Information Management, National Taiwan University}{}
-      {Research Assistant to
-      \prof{https://management.ntu.edu.tw/en/IM/faculty/teacher/sn/15}{Chih-Ping Wei}}
-      {Jun.\@ 2022 \textbf{-} Feb.\@ 2023}
-        \resumeItemListStart
-        \resumeItem {Conducted literature reviews in economics, management, marketing,
-            and finance applying sentiment analysis.}
-            \resumeItem {Worked on modeling the confidence level of information from 
-            online reviews toward varying sentiment and arousal.}
-        \resumeItemListEnd 
-  \resumeSubHeadingListEnd
+\resumeSubheading
+{The University of Chicago Booth School of Business}{Chicago, Illinois}
+{Research Professional to \prof{https://sites.google.com/chicagobooth.edu/rimmyetomy/}{Rimmy E.\@ Tomy}}
+{Jul.\@ 2024 \textbf{-} Present} 
+
+\resumeSubheading
+{National Taiwan University
+                % \normalfont{(Admission rate: 0.09\%)}
+}{Taipei, Taiwan}
+{B.B.A.\@ in Information Management;   \textbf{GPA: 3.93} Magna cum laude}
+{Sep.\@ 2018 \textbf{-} Jun.\@ 2023}  
+                            %      \vspace{5pt}
+                            %      \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+                            %        \textit{\small M.A.\@ in Economics} &
+                            %        \textit{\small Sep.\@ 2023 \textbf{-} Exp.\@ Jun.\@ 2024}\\
+                            %      \end{tabular*}\vspace{-7pt}
+\resumeItemListStart
+\resumeItem{\textbf{Ph.D.-level Economics Courses:}
+    Microeconomics, Econometrics,
+    Bayesian and Network Econometrics,
+    Computational Methods for Econometrics,
+    Economic Analysis of Social Networks.
+}
+\resumeItem{\textbf{Ph.D.-level Business Courses:}
+    Game-Theoretic Approach Marketing,
+    Information Economics, Platform Strategy.}
+\resumeItem{\textbf{Computer Science Courses:}
+    Text Mining (Ph.D.-level),
+    Machine Learning (Ph.D.-level),
+    Data Structure and Advanced Programming,
+    The Design and Analysis of Algorithms,
+    Database.}
+\resumeItem{\textbf{Mathematics Courses:}
+    Analysis,
+    Advanced Statistics (Ph.D.-level),
+    ODE/PDE,
+    Operations Research,
+    Convex Optimization (Ph.D.-level),
+Machine Learning Theory (Ph.D.-level).}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+\section*{Research}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Behavior and Data Science Research Center, National Taiwan University}{}
+{Research Assistant to
+\prof{https://sites.google.com/site/chihshenghsieh/}{Chih-Sheng Hsieh}}
+                        %  and \textbf{\href{https://sites.google.com/view/cyruschu}{C.Y. Cyrus Chu}}}
+{Jun.\@ 2022 \textbf{-} Present}
+\resumeItemListStart
+                                            %\resumeItem {Organized over 500 suspicious celebrities 
+                                        %  related to the MeToo movement
+                                        %  and assorted suspects' characteristics.}
+                                  %        \resumeItem{Collected, extracted and cleaned    
+                              %            search records from Google Trends
+                              %            to build complete two-year panel data.}
+                                  %        \resumeItem {Used a statistical estimation model to calibrate
+                              %        the normalized raw search records for over 500 suspicious celebrities cleaned and extracted 
+                              %        from Google Trends to build complete two-year panel data
+                              %            to initiate further analysis.}
+                                  %        \resumeItem {Developed and implemented regressions to 
+                              %          analyze the effect of big events and 
+                              %            spillover in the MeToo movement.}
+\resumeItem {Implemented regressions to analyze the effect of big events 
+    and spillover in the MeToo movement after adopting West (2021) 
+    to calibrate the normalized Google Trends time-series data and build a 
+complete two-year panel dataset.}
+\resumeItem {Employed the network analysis approach to examine suburbanization 
+    and rural labor performance in China by using SQL to utilize a 200GB telecom
+dataset with tens of billion entries for the communication networks of mobile phones.}
+\resumeItem {Estimated the impact of users' friendship network sizes,
+    behaviors, and patterns on users' selection of tariff plans, call durations,
+and cellphone models and extended to the marketing research.}
+                                                                                                  %        \resumeItem {Established and visualized large-scale networks from
+                                                                                              %        14GB Taiwanese companies'
+                                                                                              %            and 200GB telecom's datasets.}
+                                                                                                          %\resumeItem {Conducted several literature reviews of corporate finance 
+                                                                                                      %        applying social network analysis to improve further research.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Department of Economics, National Taiwan University}{}
+{Research Assistant to 
+    \prof{https://yu-chang-chen.github.io}{Yu-Chang Chen},
+    \textbf{\href{https://sites.google.com/view/tsaihsintien/}{Hsin-Tien (Tiffany) Tsai}},
+    and \textbf{\href{https://economicsatntu.wixsite.com/ming-jen-lin}{Ming-Jen Lin}},
+in \textbf{\href{https://ccl-lab.github.io}{CCL Lab}}}
+{Aug.\@ 2023 \textbf{-} Present}
+\resumeItemListStart
+                                                                                                                                                                      %        \resumeItem {Conducted literature reviews in science funding and research
+                                                                                                                                                                  %        evaluations, recommendation systems, e-commerce, and platform advertising 
+                                                                                                                                                                  %        auctfunding.}
+\resumeItem {Explored user behaviors and patterns and their 
+purchasing results by using data from a large e-commerce platform.}
+\resumeItem {Worked on extending Jeziorski and Segal (2015) to estimate consumer impatience
+in various markets using our dataset.}
+\resumeItem {Proposed research plans to evaluate and improve the usage and efficiency of research
+funds by the government.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Department of Information Management, National Taiwan University}{}
+{Research Assistant to
+\prof{https://management.ntu.edu.tw/en/IM/faculty/teacher/sn/15}{Chih-Ping Wei}}
+{Jun.\@ 2022 \textbf{-} Feb.\@ 2023}
+\resumeItemListStart
+\resumeItem {Conducted literature reviews in economics, management, marketing,
+and finance applying sentiment analysis.}
+\resumeItem {Worked on modeling the confidence level of information from 
+online reviews toward varying sentiment and arousal.}
+\resumeItemListEnd 
+\resumeSubHeadingListEnd
 
 %----------- WORK EXPERIENCE -----------
 
-\section{Independent Research}
-  \vspace{1pt}
+\section*{Independent Research}
   \resumeSubHeadingListStart
     
 %    \resumeSubheading
@@ -169,7 +179,7 @@
 %            to obtain large-scale online student learning behavior data.}
 %    \resumeItemListEnd
 
-  \vspace{-5pt}\item
+  \item
     \textbf{Political Sentiment Analysis: 
   A Survey of U.S.\@ Media's Attitude toward China Before and After
   the Presidential Election}\\
@@ -212,10 +222,8 @@
 
 %----------- SKILLS -----------
 
-\section{Skills}
-  \vspace{1pt}
+\section*{Skills} 
   \resumeSubHeadingListStart
-    \vspace{-5pt}
     \small{\item{
         \textbf{Programming: }{Python, SQL, Stata, R, Julia, shell scripts,
         C++, Git/Github, Markdown, \LaTeX.} \\[3pt]
@@ -235,5 +243,5 @@
 
 
 
-%-------------------------------------------
+
 \end{document}
