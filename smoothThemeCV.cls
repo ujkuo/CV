@@ -40,10 +40,6 @@ anchorcolor = myred]{hyperref}
 \newcommand{\prof}[2]{Professor \textbf{\href{#1}{#2}}}
 
 
-% Set length
-\newlength{\hvspace}
-\setlength{\hvspace}{-7pt}
-
 % Set section
 \titleformat{\section}
 {\raggedright\Large\bfseries}{\thesection}{0em}{}[\vspace{-8pt}]
