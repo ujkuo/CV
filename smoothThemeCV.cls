@@ -32,6 +32,13 @@
     citecolor = myred,
 anchorcolor = myred]{hyperref}
 \RequirePackage{geometry}
+\RequirePackage{lastpage}
+\RequirePackage{fancyhdr}
+\renewcommand\headrulewidth{0pt}
+\fancyhf{}
+\pagestyle{fancy}
+\cfoot{\makebox[\textwidth][c]{Jesse Yu-Chieh Kuo - CV}}
+\rfoot{\makebox[\textwidth][r]{\thepage / \pageref*{LastPage}}}
 
 % Set the page margins
 \geometry{letterpaper, portrait, margin=0.7in}
