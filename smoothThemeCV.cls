@@ -41,7 +41,7 @@ anchorcolor = myred]{hyperref}
 \rfoot{\makebox[\textwidth][r]{\thepage / \pageref*{LastPage}}}
 
 % Set the page margins
-\geometry{letterpaper, portrait, margin=0.7in}
+\geometry{letterpaper, portrait, margin=0.8in}
 \setlength{\tabcolsep}{0in}
 
 \newcommand{\prof}[2]{Professor \textbf{\href{#1}{#2}}}
